@@ -1,7 +1,6 @@
 const routes = require("next-routes")();
-//routes
-  //.add("/campaigns/new", "/campaigns/new")
-
-
+routes
+  //.add("/user/ticket/", "/ticket")
+  .add("/ticket", "/user/ticket")
 
 module.exports = routes;

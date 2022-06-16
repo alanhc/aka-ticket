@@ -1,11 +1,13 @@
 import Layout from "./Layout";
+import { Link } from "../routes";
 
 export default function Collections(item) {
     const { name, thumbnailUri, contract, tokenId } = item ?? {};
 
     return (
         <div className="flex justify-center">
-        <a href="#"> 
+        <Link route="ticket" params= {{name: 'alan'}}>
+        <a> 
           <div className="flex flex-col md:flex-row md:max-w-xl rounded-lg bg-white shadow-lg">
             <img className="w-full h-96 md:h-auto object-cover md:w-48 rounded-t-lg md:rounded-none md:rounded-l-lg" src={thumbnailUri} alt="" />
             <div className="p-6 flex flex-col justify-start">
@@ -17,6 +19,7 @@ export default function Collections(item) {
             </div>
           </div>
         </a>
+        </Link>
         </div>
     )
 }

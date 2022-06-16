@@ -7,16 +7,14 @@ const test_collections = [
 
 export default function UserHome() {
   const items = test_collections
-  function generateQRCode() {
-
-  }
+ 
   return (
     <Layout>
       <h1 className="text-3xl font-bold underline">
         user
       </h1>
       {items.map(item =>
-        <CollectionRow {...item} onclick={this.generateQRCode}/>
+        <CollectionRow {...item}/>
       )
       }
     </Layout >
