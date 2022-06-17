@@ -4,13 +4,13 @@ export default () => {
     return (
         <div>
             <Link route="/verifier">
-                <a className="text-blue-500">Verifier</a>
+                <a className="btn">Verifier</a>
             </Link>
             <Link route="/user">
-                <a className="text-blue-500">User</a>
+                <a className="btn">User</a>
             </Link>
             <Link route="#">
-                <a className="text-blue-500">Connect Wallet</a>
+                <a className="btn">Connect Wallet</a>
             </Link>
 
         </div>

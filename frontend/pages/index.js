@@ -1,5 +1,5 @@
 import Layout from "../components/Layout";
-
+console.log("server:", process.env.SERVER_URL);
 export default function Home() {
   return (
     <Layout>
