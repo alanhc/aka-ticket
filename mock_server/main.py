@@ -8,6 +8,7 @@ uvicorn main:app --reload
 origins = [
     "http://localhost:8000",
     "http://localhost:3000",
+    "http://192.168.0.103:3000",
 ]
 app = FastAPI()
 app.add_middleware(
@@ -23,12 +24,12 @@ async def get_my_ticket(address: str):
     return {
         "result":[
             {
-                "tokenId":6797,
+                "tokenId":9999,
                 "contract":"KT1AFq5XorPduoYyWxs5gEyrFK6fVjJVbtCj",
                 "thumbnailUri":"https://assets.akaswap.com/ipfs/QmVbHWbNXK7nvgQAtoDdkwRhAJBbLmYAK9nRRG2poCqzkq"
             },
             {
-                "tokenId":6798,
+                "tokenId":9999,
                 "contract":"KT1AFq5XorPduoYyWxs5gEyrFK6fVjJVbtCj",
                 "thumbnailUri":"https://assets.akaswap.com/ipfs/QmfMkf4QU22DEW7at8DJJJUd86byQXnwDiMe3wiCmPrZLK"
             }
