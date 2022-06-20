@@ -10,7 +10,7 @@
 
 # next.js
 /.next/
-/out/
+
 
 # production
 /build
@@ -30,3 +30,6 @@ yarn-error.log*
 
 # vercel
 .vercel
+
+**/public/workbox-*.js
+**/public/sw.js
