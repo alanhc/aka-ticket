@@ -1,11 +1,11 @@
 import SwitchRole from "./SwitchRole"
 //import Footer from "./Footer"
 
-const Layout = (props) => {
+const Layout = ({children}) => {
     return (
         <div className="container mx-auto"> 
             <SwitchRole/>
-            { props.children }
+            { children }
             
         </div>
     )

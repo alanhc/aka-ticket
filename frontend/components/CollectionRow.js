@@ -1,15 +1,16 @@
 import Layout from "./Layout";
 import { Link } from "../routes";
-
+import Image from "next/image";
 export default function Collections(item) {
     const { name, thumbnailUri, contract, tokenId } = item ?? {};
+ 
 
     return (
         <div className="flex justify-center">
         <Link route="/user/ticket" params= {{name: 'alan'}}>
         <a> 
           <div className="flex flex-col md:flex-row md:max-w-xl rounded-lg bg-white shadow-lg">
-            <img className="w-full h-96 md:h-auto object-cover md:w-48 rounded-t-lg md:rounded-none md:rounded-l-lg" src={thumbnailUri} alt="" />
+            <Image className="w-full h-96 md:h-auto object-cover md:w-48 rounded-t-lg md:rounded-none md:rounded-l-lg" src={thumbnailUri} alt="" width={500} height={500}/>
             <div className="p-6 flex flex-col justify-start">
               <h5 className="text-gray-900 text-xl font-medium mb-2">{name}</h5>
               <p className="text-gray-700 text-base mb-4">

@@ -1,6 +1,6 @@
 
 import {Link} from "../routes"
-export default () => {
+export default function SwitchRole(props) {
     return (
         <div>
             <Link route="/verifier">

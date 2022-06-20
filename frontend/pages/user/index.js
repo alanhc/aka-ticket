@@ -27,7 +27,7 @@ export default function UserHome() {
         user
       </h1>
       {collections.map(token_metadata =>
-        <CollectionRow {...token_metadata} />
+        <CollectionRow {...token_metadata} key={token_metadata.id}/>
       )}
 
     </Layout >
