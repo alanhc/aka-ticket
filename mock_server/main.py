@@ -3,6 +3,7 @@ from fastapi.middleware.cors import CORSMiddleware
 
 """_summary_
 uvicorn main:app --reload
+test
 """
 
 origins = [
