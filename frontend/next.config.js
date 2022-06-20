@@ -13,7 +13,7 @@ const nextConfig = withPWA({
   assertPrefix: isProd? "/aka-ticket":"",
   reactStrictMode: true,
   env: {
-    SERVER_URL: "http://192.168.0.103:8000",
+    SERVER_URL: "https://aka-ticket.herokuapp.com",
   }  
 })
 
