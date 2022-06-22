@@ -7,6 +7,7 @@
     "start_url": "index.html",
     "name": "aka-ticket",
     "short_name": "aka-ticket",
+    "prefer_related_applications":false,
     "icons": [
         {
             "src": "icon-192x192.png",
