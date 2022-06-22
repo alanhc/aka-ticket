@@ -2,7 +2,7 @@
     "theme_color": "#f69435",
     "background_color": "#f69435",
     "display": "fullscreen",
-    "scope": "/aka-ticket/",
+    "scope": "/",
     "start_url": "/",
     "name": "aka-ticket",
     "short_name": "aka-ticket",
