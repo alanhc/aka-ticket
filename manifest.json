@@ -3,7 +3,7 @@
     "background_color": "#f69435",
     "display": "fullscreen",
     "scope": "/aka-ticket/",
-    "start_url": "/aka-ticket/",
+    "start_url": "/",
     "name": "aka-ticket",
     "short_name": "aka-ticket",
     "icons": [
