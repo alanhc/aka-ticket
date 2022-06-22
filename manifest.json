@@ -4,7 +4,7 @@
     "display": "fullscreen",
     "scope": "/",
     "id":"index.html",
-    "start_url": "",
+    "start_url": "/aka-ticket/",
     "name": "aka-ticket",
     "short_name": "aka-ticket",
     "icons": [
