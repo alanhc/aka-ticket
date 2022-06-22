@@ -112,3 +112,6 @@ define(['./workbox-74d02f44'], (function (workbox) { 'use strict';
 
 }));
 //# sourceMappingURL=sw.js.map
+self.addEventListener("install", function (event) {
+  console.log("Hello world from the Service Worker 🤙");
+});
