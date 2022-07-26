@@ -3,7 +3,7 @@
 const withPWA = require('next-pwa');
 // https://aka-ticket.herokuapp.com https://140.112.30.39:5000
 const env_obj = {
-  SERVER_URL:"http://140.112.30.39:5000"
+  SERVER_URL: "http://140.112.30.39:5000"
 }
 const isProd = process.env.NODE_ENV === 'production';
 const prefix_url = "/aka-ticket/"

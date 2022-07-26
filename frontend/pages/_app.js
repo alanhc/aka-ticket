@@ -1,9 +1,12 @@
 import '../styles/globals.css'
+import TicektProvider from "../context/index";
 
 function MyApp({ Component, pageProps }) {
   return (
     <div>
-      <Component {...pageProps} />
+      <TicektProvider>
+        <Component {...pageProps} />
+      </TicektProvider>
     </div>
 
   )
