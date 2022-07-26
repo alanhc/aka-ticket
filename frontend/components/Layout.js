@@ -3,7 +3,7 @@ import SwitchRole from "./SwitchRole"
 
 const Layout = ({children}) => {
     return (
-        <div className="container mx-auto"> 
+        <div className=" flex flex-col items-center justify-between"> 
             <SwitchRole/>
             { children }
             

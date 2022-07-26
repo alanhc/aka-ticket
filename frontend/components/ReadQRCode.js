@@ -6,6 +6,8 @@ export default function ShowQRCode(value) {
     return (
         <>
             <QrReader
+                className='w-full'
+                constraints={ {facingMode: 'environment'} }
                 onResult={(result, error) => {
                     if (!!result) {
                         setData(result?.text);
@@ -15,7 +17,7 @@ export default function ShowQRCode(value) {
                         console.info(error);
                     }
                 }}
-                style={{ width: '100%' }}
+                //style={{ width: '100%' }}
             />
             <p>{data}</p>
         </>

@@ -14,7 +14,8 @@ export default function UserHome() {
   useEffect(() => {
     const fetchCollections = async () => {
       const _tokens = await getCollections("tz1hHamH4QRSqA8NbzE8gE4ecP6QExoLJw6J");
-      setCollections(_tokens.result);
+      
+      setCollections(_tokens);
     }
     fetchCollections();
     
