@@ -1,13 +1,14 @@
 
 import { BeaconWallet } from "@taquito/beacon-wallet";
+import { NetworkType } from "@airgap/beacon-sdk";
 
-const preferredNetwork = "ithacanet";
+const preferredNetwork =  NetworkType.MAINNET;
 const options = {
     name: "NFT",
     iconUrl: "https://tezostaquito.io/img/favicon.png",
     preferredNetwork: preferredNetwork,
 };
-const rpcURL = "https://ithacanet.smartpy.io/";
+const rpcURL = "https://mainnet-tezos.giganode.io";
 const wallet = new BeaconWallet(options);
 const getActiveTezosAccount = async () => {
     return await wallet.client.getActiveAccount();

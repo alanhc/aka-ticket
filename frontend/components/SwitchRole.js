@@ -11,6 +11,7 @@ export default function SwitchRole(props) {
     const [tezosWallet, setTezosWallet] = useState(null);
     const handleConnectTezosWallet = async () => {
         
+        
         const { success,wallet } = await connectTezosWallet();
         console.log("connecting..",wallet,success)
         setTezosWallet(wallet);

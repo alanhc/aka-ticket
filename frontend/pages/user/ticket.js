@@ -15,18 +15,23 @@ export default function Ticket(props) {
     console.log(ticket)
     const [ metadata, setMetadata ] = useState({
         contract: "KT1QQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQ",
-        tokenId: 2,
+        tokenId: -1,
         otp: "otp_test"
     });
+    const activateTicket = ()=>{
+        alert("activate")
+    }
 
     return (
         <Layout>
+            {JSON.stringify(ticket)}
             <h1 className="text-3xl font-bold underline"> {ticket.name} </h1>
             <img src={ticket.thumbnailUri} width={500} height={500}/> 
-            <button className="btn btn-blue">activate</button>
-            { (metadata.tokenId!==-1)?
-                <ShowQRCode {...metadata}/>:<div></div>
+            <button className="btn btn-blue" onClick={ ()=>activateTicket()}>activate</button>
+            { metadata.tokenId!==-1 && 
+                <ShowQRCode {...metadata}/>
             }
+            
         </Layout >
     )
 }
