@@ -8,8 +8,8 @@ const options = {
     iconUrl: "https://tezostaquito.io/img/favicon.png",
     preferredNetwork: preferredNetwork,
 };
-const rpcURL = "https://mainnet-tezos.giganode.io";
-const wallet = new BeaconWallet(options);
+export const rpcURL = "https://mainnet-tezos.giganode.io";
+export const wallet = new BeaconWallet(options);
 const getActiveTezosAccount = async () => {
     return await wallet.client.getActiveAccount();
   };
@@ -24,7 +24,7 @@ const connectTezosWallet = async () => {
     return { success: true, wallet: account.address };
 }
 const disconnectTezosWallet = async () => {
-    await wallet.disconnect();
+    await wallet.clearActiveAccount();
     return { success: true, wallet: null };
 };
 

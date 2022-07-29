@@ -1,5 +1,5 @@
 import '../styles/globals.css'
-import TicektProvider from "../context/index";
+import TicektProvider from "../context/ticketContext";
 
 function MyApp({ Component, pageProps }) {
   return (

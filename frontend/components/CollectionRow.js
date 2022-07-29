@@ -1,7 +1,7 @@
 import Layout from "./Layout";
 import { Link } from "../routes";
 import Image from "next/image";
-import { TicketContext } from "../context/index";
+import { TicketContext } from "../context/ticketContext";
 import { useState, useContext } from "react";
 
 export default function Collections(item) {
